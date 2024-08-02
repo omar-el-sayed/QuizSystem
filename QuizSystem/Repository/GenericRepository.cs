@@ -1,4 +1,5 @@
-﻿using QuizSystem.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using QuizSystem.Data;
 using QuizSystem.Models;
 
 namespace QuizSystem.Repository
@@ -13,28 +14,39 @@ namespace QuizSystem.Repository
         }
 
         public IQueryable<T> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+            => _context.Set<T>().Where(e => !e.IsDeleted);
 
         public T? GetById(int id)
+            => GetAll().FirstOrDefault(e => e.Id == id);
+
+        public T? GetByIdWithTracking(int id)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>()
+                .Where(e => !e.IsDeleted && e.Id == id)
+                .AsTracking()
+                .FirstOrDefault();
         }
 
         public void Add(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Add(entity);
+            //return entity;
         }
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Update(entity);
         }
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            entity.IsDeleted = true;
+            Update(entity);
+        }
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
         }
     }
 }
