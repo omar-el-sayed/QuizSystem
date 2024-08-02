@@ -6,22 +6,31 @@ namespace QuizSystem.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CourseController(ICourseService service) : ControllerBase
+    public class CourseController(ICourseService service) : BaseController
     {
-        [HttpPost]
-        public void Create(CourseViewModel viewModel)
-            => service.Create(viewModel);
+        [HttpPost("add")]
+        public IActionResult Create(CourseViewModel viewModel)
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
 
-        [HttpPut("{id}")]
+            if (GetLoggedInUserRole() != "Instructor")
+                return Forbid("Only instructors can add courses");
+
+            service.Create(viewModel);
+            return Ok(new { message = "Course added successfully" });
+        }
+
+        [HttpPut("update/{id}")]
         public bool Update(int id, CourseViewModel viewModel)
             => service.Update(id, viewModel);
 
-        [HttpDelete]
+        [HttpDelete("delete/{id}")]
         public bool Delete(int id)
             => service.Delete(id);
 
-        [HttpGet("{id}")]
-        public CourseViewModel Enroll(int id)
-            => service.Enroll(id);
+        //[HttpGet("enroll/{id}")]
+        //public CourseViewModel Enroll(int id)
+        //    => service.Enroll(id);
     }
 }

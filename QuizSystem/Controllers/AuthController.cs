@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuizSystem.Helpers;
 using QuizSystem.Services.UserManagement;
 using QuizSystem.ViewModels.User;
 
@@ -24,7 +25,17 @@ namespace QuizSystem.Controllers
             if (authenticatedUser is null)
                 return Unauthorized(new { message = "Invalid credentials" });
 
-            return Ok(new { message = "Login successful" });
+            HttpContext.Session.SetString("Username", authenticatedUser.Username);
+            HttpContext.Session.SetString("Role", authenticatedUser.Role.ConvertRoleTypeToString());
+
+            return Ok(new { message = "Login successful", role = authenticatedUser.Role.ConvertRoleTypeToString() });
+        }
+
+        [HttpPost("logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return Ok(new { message = "Logout successful" });
         }
     }
 }
