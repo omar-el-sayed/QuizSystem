@@ -64,6 +64,19 @@ namespace QuizSystem.Helpers
                     return "Unknown type";
             }
         }
+
+        public static UserType? ConvertStringToRoleType(this string type)
+        {
+            switch (type)
+            {
+                case "Student":
+                    return UserType.Student;
+                case "Instructor":
+                    return UserType.Instructor;
+                default:
+                    return null;
+            }
+        }
         #endregion
     }
 }

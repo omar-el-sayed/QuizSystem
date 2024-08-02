@@ -7,9 +7,9 @@ namespace QuizSystem.Services.Quizzes
 {
     public class QuizService(IGenericRepository<Quiz> _repository) : IQuizService
     {
-        public void Create(QuizViewModel viewModel)
+        public void Create(QuizViewModel viewModel, int instructorId)
         {
-            var quiz = viewModel.ToModel(0); /////
+            var quiz = viewModel.ToModel(instructorId);
             _repository.Add(quiz);
             _repository.SaveChanges();
         }

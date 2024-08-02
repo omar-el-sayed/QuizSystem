@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using QuizSystem.Helpers;
+using QuizSystem.Models;
 using QuizSystem.Services.Courses;
 using QuizSystem.ViewModels.Course;
 
@@ -14,7 +16,7 @@ namespace QuizSystem.Controllers
             if (!IsUserLoggedIn())
                 return Unauthorized(new { message = "User not logged in" });
 
-            if (GetLoggedInUserRole() != "Instructor")
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Instructor)
                 return Forbid("Only instructors can add courses");
 
             service.Create(viewModel);
@@ -22,15 +24,46 @@ namespace QuizSystem.Controllers
         }
 
         [HttpPut("update/{id}")]
-        public bool Update(int id, CourseViewModel viewModel)
-            => service.Update(id, viewModel);
+        public IActionResult Update(int id, CourseViewModel viewModel)
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
+
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Instructor)
+                return Forbid("Only instructors can edit courses");
+
+            if (service.Update(id, viewModel))
+                return Ok(new { message = "Course updated successfully" });
+
+            return BadRequest(new { message = "Cannot edit course" });
+        }
 
         [HttpDelete("delete/{id}")]
-        public bool Delete(int id)
-            => service.Delete(id);
+        public IActionResult Delete(int id)
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
 
-        //[HttpGet("enroll/{id}")]
-        //public CourseViewModel Enroll(int id)
-        //    => service.Enroll(id);
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Instructor)
+                return Forbid("Only instructors can delete courses");
+
+            if (service.Delete(id))
+                return Ok(new { message = "Course deleted successfully" });
+
+            return BadRequest(new { message = "Cannot delete course" });
+        }
+
+        [HttpGet("enroll/{id}")]
+        public IActionResult Enroll(int id)
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
+
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Student)
+                return Forbid("Only students can enroll courses");
+
+            //=> service.Enroll(id);
+            return Ok();
+        }
     }
 }

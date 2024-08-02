@@ -11,6 +11,11 @@ namespace QuizSystem.Controllers
             return !string.IsNullOrEmpty(HttpContext.Session.GetString("Username"));
         }
 
+        protected int GetLoggedInUserId()
+        {
+            return int.Parse(HttpContext.Session.GetString("UserId"));
+        }
+
         protected string GetLoggedInUsername()
         {
             return HttpContext.Session.GetString("Username");

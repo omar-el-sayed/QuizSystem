@@ -25,6 +25,7 @@ namespace QuizSystem.Controllers
             if (authenticatedUser is null)
                 return Unauthorized(new { message = "Invalid credentials" });
 
+            HttpContext.Session.SetString("UserId", authenticatedUser.Id.ToString());
             HttpContext.Session.SetString("Username", authenticatedUser.Username);
             HttpContext.Session.SetString("Role", authenticatedUser.Role.ConvertRoleTypeToString());
 
