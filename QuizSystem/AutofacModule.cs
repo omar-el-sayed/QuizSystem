@@ -1,7 +1,9 @@
 ﻿using Autofac;
 using QuizSystem.Data;
 using QuizSystem.Repository;
+using QuizSystem.Services.Choices;
 using QuizSystem.Services.Courses;
+using QuizSystem.Services.Questions;
 using QuizSystem.Services.Quizzes;
 using QuizSystem.Services.UserManagement;
 
@@ -17,6 +19,8 @@ namespace QuizSystem
             builder.RegisterType<UserService>().As<IUserService>().InstancePerLifetimeScope();
             builder.RegisterType<CourseService>().As<ICourseService>().InstancePerLifetimeScope();
             builder.RegisterType<QuizService>().As<IQuizService>().InstancePerLifetimeScope();
+            builder.RegisterType<QuestionService>().As<IQuestionService>().InstancePerLifetimeScope();
+            builder.RegisterType<ChoiceService>().As<IChoiceService>().InstancePerLifetimeScope();
         }
     }
 }

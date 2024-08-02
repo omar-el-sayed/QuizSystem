@@ -1,5 +1,7 @@
 ﻿using QuizSystem.Models;
+using QuizSystem.ViewModels.Choice;
 using QuizSystem.ViewModels.Course;
+using QuizSystem.ViewModels.Question;
 using QuizSystem.ViewModels.Quiz;
 using QuizSystem.ViewModels.User;
 
@@ -76,6 +78,29 @@ namespace QuizSystem.Helpers
                 default:
                     return null;
             }
+        }
+        #endregion
+
+        #region Question
+        public static Question ToModel(this QuestionViewModel viewModel)
+        {
+            return new Question
+            {
+                Text = viewModel.Text,
+                Grade = viewModel.Grade
+            };
+        }
+        #endregion
+
+        #region Choice
+        public static Choice ToModel(this ChoiceViewModel viewModel)
+        {
+            return new Choice
+            {
+                Text = viewModel.Text,
+                IsRightAnswer = viewModel.IsRightAnswer,
+                QuestionId = viewModel.QuestionId
+            };
         }
         #endregion
     }

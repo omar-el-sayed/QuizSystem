@@ -12,6 +12,7 @@ namespace QuizSystem.Data
         public DbSet<Question> Questions { get; set; }
         public DbSet<Quiz> Quizzes { get; set; }
         public DbSet<QuizQuestion> QuizQuestions { get; set; }
+        public DbSet<StudentCourse> StudentCourses { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<User> Users { get; set; }
 

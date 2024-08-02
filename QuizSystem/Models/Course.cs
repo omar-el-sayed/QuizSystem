@@ -5,5 +5,6 @@
         public string Name { get; set; } = string.Empty;
         public int CreditHours { get; set; }
         public ICollection<Quiz> Quizzes { get; set; }
+        public ICollection<StudentCourse> StudentCourses { get; set; }
     }
 }
