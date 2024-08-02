@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="ViewModels\" />
     <Folder Include="Services\Choice\" />
     <Folder Include="Services\UserManagement\" />
     <Folder Include="Services\Question\" />

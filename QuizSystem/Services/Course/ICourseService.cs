@@ -1,7 +1,9 @@
-﻿namespace QuizSystem.Services.Courses
+﻿using QuizSystem.ViewModels.Course;
+
+namespace QuizSystem.Services.Courses
 {
     public interface ICourseService
     {
-        void Create();
+        void Create(CourseViewModel viewModel);
     }
 }
