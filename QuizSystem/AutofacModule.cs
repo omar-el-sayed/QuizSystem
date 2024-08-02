@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using QuizSystem.Data;
 using QuizSystem.Repository;
+using QuizSystem.Services.Courses;
 
 namespace QuizSystem
 {
@@ -10,8 +11,7 @@ namespace QuizSystem
         {
             builder.RegisterType<AppDbContext>().InstancePerLifetimeScope();
             builder.RegisterGeneric(typeof(GenericRepository<>)).As(typeof(IGenericRepository<>)).InstancePerLifetimeScope();
-            //builder.RegisterType<ExamService>().As<IExamService>().InstancePerLifetimeScope();
-
+            builder.RegisterType<CourseService>().As<ICourseService>().InstancePerLifetimeScope();
         }
     }
 }

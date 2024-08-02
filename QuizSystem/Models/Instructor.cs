@@ -1,13 +1,10 @@
 ﻿namespace QuizSystem.Models
 {
-    public class Instructor : User
+    public class Instructor
     {
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
         public double Salary { get; set; }
         public ICollection<Quiz> Quizzes { get; set; }
-
-        public Instructor()
-        {
-            UserType = UserType.Instructor;
-        }
     }
 }

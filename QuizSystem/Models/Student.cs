@@ -1,10 +1,8 @@
 ﻿namespace QuizSystem.Models
 {
-    public class Student : User
+    public class Student
     {
-        public Student()
-        {
-            UserType = UserType.Student;
-        }
+        public string FirstName { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
     }
 }
