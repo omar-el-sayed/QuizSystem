@@ -30,7 +30,6 @@ namespace QuizSystem.Repository
         public void Add(T entity)
         {
             _context.Set<T>().Add(entity);
-            //return entity;
         }
 
         public void Update(T entity)

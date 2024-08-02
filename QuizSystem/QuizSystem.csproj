@@ -19,11 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Services\Choice\" />
     <Folder Include="Services\UserManagement\" />
     <Folder Include="Services\Question\" />
-    <Folder Include="Services\Quiz\" />
   </ItemGroup>
 
 </Project>
