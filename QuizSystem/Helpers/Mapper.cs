@@ -1,6 +1,7 @@
 ﻿using QuizSystem.Models;
 using QuizSystem.ViewModels.Course;
 using QuizSystem.ViewModels.Quiz;
+using QuizSystem.ViewModels.User;
 
 namespace QuizSystem.Helpers
 {
@@ -34,6 +35,18 @@ namespace QuizSystem.Helpers
                 TotalGrade = viewModel.TotalGrade,
                 InstructorId = instructorId,
                 CourseId = viewModel.CourseId
+            };
+        }
+        #endregion
+
+        #region User
+        public static User ToModel(this RegisterViewModel viewModel)
+        {
+            return new User
+            {
+                Username = viewModel.Username,
+                PasswordHash = viewModel.Password,
+                Role = viewModel.Role
             };
         }
         #endregion

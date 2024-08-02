@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,6 +79,36 @@
             {
               "$type": "Bookmark",
               "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240802204835_AddPasswordHash.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs",
+              "RelativeToolTip": "QuizSystem\\Migrations\\20240802204835_AddPasswordHash.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:48:35.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "QuizSystem\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T20:46:39.343Z",
+              "EditorCaption": ""
             }
           ]
         }
