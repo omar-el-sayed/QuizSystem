@@ -33,10 +33,17 @@ namespace QuizSystem.Data
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Username)
                 .IsUnique();
+
             modelBuilder.Entity<Course>()
                 .HasOne(c => c.Instructor)
                 .WithMany(i => i.Courses)
                 .HasForeignKey(c => c.InstructorId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Question>()
+                .HasOne(q => q.Instructor)
+                .WithMany(i => i.Questions)
+                .HasForeignKey(q => q.InstructorId)
                 .OnDelete(DeleteBehavior.NoAction);
         }
     }
