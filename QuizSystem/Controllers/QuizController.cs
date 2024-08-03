@@ -10,6 +10,21 @@ namespace QuizSystem.Controllers
     [ApiController]
     public class QuizController(IQuizService service) : BaseController
     {
+        [HttpGet("get")]
+        public IActionResult Get()
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
+
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Instructor)
+                return Forbid("Only instructors can retrieve quizzes");
+
+            int instructorId = GetLoggedInUserId();
+            var quizzes = service.Get(instructorId);
+
+            return Ok(quizzes);
+        }
+
         [HttpPost("add")]
         public IActionResult Create(QuizViewModel viewModel)
         {
@@ -54,5 +69,31 @@ namespace QuizSystem.Controllers
 
             return BadRequest(new { message = "Cannot delete quiz" });
         }
+
+        //[HttpGet("take")]
+        //public IActionResult Take()
+        //{
+        //    if (!IsUserLoggedIn())
+        //        return Unauthorized(new { message = "User not logged in" });
+
+        //    if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Student)
+        //        return Forbid("Only students can take quizzes");
+
+
+        //    return Ok(new { message = "Quiz retrieved successfully" });
+        //}
+
+        //[HttpGet("submit")]
+        //public IActionResult Submit()
+        //{
+        //    if (!IsUserLoggedIn())
+        //        return Unauthorized(new { message = "User not logged in" });
+
+        //    if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Student)
+        //        return Forbid("Only students can submit quizzes");
+
+
+        //    return Ok(new { message = "Quiz submited successfully" });
+        //}
     }
 }

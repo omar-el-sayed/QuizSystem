@@ -26,6 +26,10 @@ namespace QuizSystem.Helpers
                 CreditHours = course.CreditHours
             };
         }
+        public static IEnumerable<CourseViewModel> ToViewModels(this IQueryable<Course> courses)
+        {
+            return courses.Select(c => c.ToViewModel());
+        }
         #endregion
 
         #region Quiz
@@ -38,6 +42,19 @@ namespace QuizSystem.Helpers
                 InstructorId = instructorId,
                 CourseId = viewModel.CourseId
             };
+        }
+        public static QuizViewModel ToViewModel(this Quiz quiz)
+        {
+            return new QuizViewModel
+            {
+                StartDate = quiz.StartDate,
+                TotalGrade = quiz.TotalGrade,
+                CourseId = quiz.CourseId
+            };
+        }
+        public static IEnumerable<QuizViewModel> ToViewModels(this IQueryable<Quiz> quizzes)
+        {
+            return quizzes.Select(q => q.ToViewModel());
         }
         #endregion
 
@@ -87,8 +104,22 @@ namespace QuizSystem.Helpers
             return new Question
             {
                 Text = viewModel.Text,
-                Grade = viewModel.Grade
+                Grade = viewModel.Grade,
+                QuestionLevel = viewModel.QuestionLevel
             };
+        }
+        public static QuestionViewModel ToViewModel(this Question question)
+        {
+            return new QuestionViewModel
+            {
+                Text = question.Text,
+                Grade = question.Grade,
+                QuestionLevel = question.QuestionLevel
+            };
+        }
+        public static IEnumerable<QuestionViewModel> ToViewModels(this IQueryable<Question> questions)
+        {
+            return questions.Select(q => q.ToViewModel());
         }
         #endregion
 

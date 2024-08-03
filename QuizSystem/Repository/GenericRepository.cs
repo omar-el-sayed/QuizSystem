@@ -1,20 +1,17 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuizSystem.Data;
 using QuizSystem.Models;
+using System.Linq.Expressions;
 
 namespace QuizSystem.Repository
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
+    public class GenericRepository<T>(AppDbContext _context) : IGenericRepository<T> where T : BaseEntity
     {
-        private readonly AppDbContext _context;
-
-        public GenericRepository(AppDbContext context)
-        {
-            _context = context;
-        }
-
         public IQueryable<T> GetAll()
             => _context.Set<T>().Where(e => !e.IsDeleted);
+
+        public IQueryable<T> Get(Expression<Func<T, bool>> predicate)
+            => GetAll().Where(predicate);
 
         public T? GetById(int id)
             => GetAll().FirstOrDefault(e => e.Id == id);

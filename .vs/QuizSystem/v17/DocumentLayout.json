@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\services\\quiz\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\services\\quiz\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\models\\studentcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\controllers\\questioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\viewmodels\\question\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\viewmodels\\question\\questionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\controllers\\choicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\controllers\\choicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\services\\question\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\services\\question\\questionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|d:\\omar\\courses\\upskilling\\projects\\quizsystem\\quizsystem\\helpers\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4CF6B1-C628-4C73-A0ED-62B3217EACCD}|QuizSystem\\QuizSystem.csproj|solutionrelative:quizsystem\\helpers\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Quiz.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Models\\Quiz.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Quiz.cs",
+              "RelativeToolTip": "QuizSystem\\Models\\Quiz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:52:33.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuestionController.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\QuestionController.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Controllers\\QuestionController.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\QuestionController.cs",
+              "RelativeToolTip": "QuizSystem\\Controllers\\QuestionController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:45:32.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionViewModel.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\ViewModels\\Question\\QuestionViewModel.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\ViewModels\\Question\\QuestionViewModel.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\ViewModels\\Question\\QuestionViewModel.cs",
+              "RelativeToolTip": "QuizSystem\\ViewModels\\Question\\QuestionViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:43:30.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Question.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Models\\Question.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Question.cs",
+              "RelativeToolTip": "QuizSystem\\Models\\Question.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:43:42.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Helpers\\Mapper.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Helpers\\Mapper.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Helpers\\Mapper.cs",
+              "RelativeToolTip": "QuizSystem\\Helpers\\Mapper.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAGsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:41:51.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuestionService.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Services\\Question\\QuestionService.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Services\\Question\\QuestionService.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Services\\Question\\QuestionService.cs",
+              "RelativeToolTip": "QuizSystem\\Services\\Question\\QuestionService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:41:50.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuizService.cs",
+              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Services\\Quiz\\QuizService.cs",
+              "RelativeDocumentMoniker": "QuizSystem\\Services\\Quiz\\QuizService.cs",
+              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Services\\Quiz\\QuizService.cs",
+              "RelativeToolTip": "QuizSystem\\Services\\Quiz\\QuizService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T23:41:16.02Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
@@ -99,84 +194,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240802225431_AddStudentCourseRelationship.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs",
-              "RelativeToolTip": "QuizSystem\\Migrations\\20240802225431_AddStudentCourseRelationship.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:54:31.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "QuizSystem\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:53:54.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StudentCourse.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\StudentCourse.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Models\\StudentCourse.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\StudentCourse.cs",
-              "RelativeToolTip": "QuizSystem\\Models\\StudentCourse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:53:16.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Course.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Models\\Course.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Course.cs",
-              "RelativeToolTip": "QuizSystem\\Models\\Course.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:51:16.238Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Models\\Student.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Models\\Student.cs",
-              "RelativeToolTip": "QuizSystem\\Models\\Student.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:51:12.839Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ChoiceController.cs",
-              "DocumentMoniker": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\ChoiceController.cs",
-              "RelativeDocumentMoniker": "QuizSystem\\Controllers\\ChoiceController.cs",
-              "ToolTip": "D:\\Omar\\Courses\\Upskilling\\Projects\\QuizSystem\\QuizSystem\\Controllers\\ChoiceController.cs",
-              "RelativeToolTip": "QuizSystem\\Controllers\\ChoiceController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAAADQAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T22:48:49.23Z",
-              "EditorCaption": ""
             }
           ]
         }

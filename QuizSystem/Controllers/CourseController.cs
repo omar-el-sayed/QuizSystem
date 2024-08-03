@@ -10,6 +10,21 @@ namespace QuizSystem.Controllers
     [ApiController]
     public class CourseController(ICourseService service) : BaseController
     {
+        [HttpGet("get")]
+        public IActionResult Get()
+        {
+            if (!IsUserLoggedIn())
+                return Unauthorized(new { message = "User not logged in" });
+
+            if (GetLoggedInUserRole().ConvertStringToRoleType() != UserType.Instructor)
+                return Forbid("Only instructors can retrieve courses");
+
+            int instructorId = GetLoggedInUserId();
+            var courses = service.Get(instructorId);
+
+            return Ok(courses);
+        }
+
         [HttpPost("add")]
         public IActionResult Create(CourseViewModel viewModel)
         {

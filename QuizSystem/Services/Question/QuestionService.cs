@@ -7,6 +7,11 @@ namespace QuizSystem.Services.Questions
 {
     public class QuestionService(IGenericRepository<Question> _repository) : IQuestionService
     {
+        public IEnumerable<QuestionViewModel> Get(int instructorId)
+        {
+            return _repository.Get(q => q.InstructorId == instructorId).ToViewModels();
+        }
+
         public void Create(QuestionViewModel viewModel)
         {
             var question = viewModel.ToModel();
